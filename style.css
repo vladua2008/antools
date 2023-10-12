@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(30, 37, 43, 1);
+}
+.header-content-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-list{
+    display: flex;
+    gap: 41px;
+}
+.nav-list{
+    display: flex;
+    gap: 20px;
+}
+.nav-list-link{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.contacts-list-link{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+.logo::before{
+    content:"";
+    background-image: url(./Group\ 159.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 19.29px;
+    height: 20.95px;
+    padding-right: 20px;
+}
+.logo{
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+}
+.group{
+    margin-top: 104px;
+}
+
+
