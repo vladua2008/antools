@@ -1,5 +1,5 @@
 body {
-    background-colo: rgba(30, 37, 43, 1);
+    background-color: rgba(30, 37, 43, 1);
     font-family: Poppins;
 }
 .header-content-wrap{
@@ -143,9 +143,8 @@ body {
     font-weight: 500;
     line-height: 62px;
     letter-spacing: 0em;
-    text-align: left;
 }
-.newcomer-list-title{
+.newcomer-list-description{
     font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
@@ -153,4 +152,79 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
+.newcomer-list-btn{
+    width: 198px;
+    height: 58px;
+    border-radius: 8px;
+    background-color: #FF6E30;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+.testimonial-list-img{
+    width: 399px;
+    height: 492px;
+    border: 1px;
+}
+/* .testimonial-text-title{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0.015em;
+    text-align: left;
+}
+.testimonial-text-description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+} */
+.testimonial-list-description{
+    max-width: 393px;
+    max-height: 180px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+}
+.join-list-title{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+.join-list-description{
+    max-width: 427px;
+    max-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 
+.join{
+    padding-bottom: 240px;
+}
+.footer-content-wrap{
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+}
+.contacts-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-list{
+
+}
+
+.company-list{
+
+}
