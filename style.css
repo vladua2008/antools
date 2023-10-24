@@ -1,6 +1,7 @@
 body {
     background-color: rgba(30, 37, 43, 1);
     font-family: Poppins;
+    color: white;
 }
 .header-content-wrap{
     display: flex;
@@ -94,6 +95,11 @@ body {
     text-align: left;
     padding-bottom: 60px;
 }
+.populartools-list{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
 .popular-list-title{
     font-family: Poppins;
     font-size: 48px;
@@ -129,6 +135,12 @@ body {
     border-radius: 8px;
     margin: 0 auto;
 }
+.popular-tools-list-wrap{
+    width: 326px;
+    height: 228px ;
+    border-radius: 8px;
+}
+
 .brand-list-title{
     font-family: Poppins;
     font-size: 24px;
@@ -161,6 +173,14 @@ body {
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
+}
+.newcomer-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newcomer-list-wrap{
+    width: 245px;
+    height: 228px;
 }
 .testimonial-list-img{
     width: 399px;
@@ -214,7 +234,7 @@ body {
 .footer-content-wrap{
     display: flex;
     flex-wrap: flex;
-    justify-content: center;
+    gap: 115px;
 }
 .contacts-list{
     display: flex;
@@ -225,6 +245,7 @@ body {
 
 }
 
-.company-list{
-
+.logo-list{
+    width: 260px;
+    height: 183px;
 }
