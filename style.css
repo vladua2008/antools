@@ -41,7 +41,7 @@ body {
 }
 .logo::before{
     content:"";
-    background-image: url(./Group\ 159.png);
+    background-image: url(./photos/Group\ 159.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 19.29px;
@@ -98,7 +98,17 @@ body {
 .populartools-list{
     display: flex;
     flex-wrap: wrap;
-   
+    column-gap: 120px;
+    row-gap: 25px;
+    padding-bottom: 100px;
+    padding-top: 90px;
+}
+.populartools-list-link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.55);
 }
 .popular-list-title{
     font-family: Poppins;
@@ -107,6 +117,19 @@ body {
     line-height: 62px;
     letter-spacing: 0em;
     text-align: center;
+}
+.populartools-list-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+.populartools-list-title-description{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: rgba(255, 165, 55, 0.55);
 }
 .popular-list-description{
     font-family: Poppins;
@@ -133,6 +156,8 @@ body {
     color: #FF6E30;
     padding: 17px 38px;
     border-radius: 8px;
+    background-color: transparent;
+    display: block;
     margin: 0 auto;
 }
 .popular-tools-list-wrap{
@@ -142,12 +167,23 @@ body {
 }
 
 .brand-list-title{
-    font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+}
+.brand-list-img{
+    
+}
+.brand-list-wrap{
+    background-image: url("./photos/Rectangle\ 308.png");
+    background-repeat: no-repeat;
+}
+.brand-list{
+    display: flex;
+    justify-content: center;
+    row-gap: 107px;
 }
 .newcomer-list-title{
     font-family: Poppins;
@@ -248,4 +284,8 @@ body {
 .logo-list{
     width: 260px;
     height: 183px;
+}
+.brand{
+    padding-top: 55px;
+    padding-bottom: 56px;
 }
