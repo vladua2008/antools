@@ -17,16 +17,23 @@ body {
     gap: 20px;
 }
 .nav-list-link{
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.55);
 }
 .nav-list-item{
     padding-top: 38px;
+}
+.contacts-list-btn-login{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.78);
+    background-color: transparent;
 }
 
 .contacts-list-btn-signup{
@@ -72,6 +79,17 @@ body {
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    width: 600px;
+    height: 140px;
+}
+.group-list-dot{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6E30;
 }
 .group-list-search{
     font-family: Poppins;
@@ -83,8 +101,9 @@ body {
 }
 .group-list-search-wrap{
     width: 497.66px;
+    height: 64px;
     border-radius: 15px;
-    
+    background-color: black;
 }
 .group-list-description{
     font-family: Poppins;
@@ -94,6 +113,9 @@ body {
     letter-spacing: 0em;
     text-align: left;
     padding-bottom: 60px;
+    color: rgba(255, 255, 255, 0.55);
+    width: 487px;
+    height: 60px;
 }
 .populartools-list{
     display: flex;
@@ -111,12 +133,13 @@ body {
     color: rgba(255, 255, 255, 0.55);
 }
 .popular-list-title{
-    font-family: Poppins;
     font-size: 48px;
     font-weight: 500;
     line-height: 62px;
     letter-spacing: 0em;
-    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    width: 455px;
+    height: 62px;
 }
 .populartools-list-title{
     font-size: 24px;
@@ -138,6 +161,9 @@ body {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+    width: 427px;
+    height: 60px;
 }
 .populartools-list-description{
     font-family: Poppins;
@@ -191,6 +217,7 @@ body {
     font-weight: 500;
     line-height: 62px;
     letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.8);
 }
 .newcomer-list-description{
     font-family: Poppins;
@@ -210,6 +237,39 @@ body {
     line-height: 27px;
     letter-spacing: 0em;
 }
+.newcomertools-list-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.78);
+}
+.newcomertools-list-description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 165, 55, 0.55);
+}
+.newcomer-list-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+.newcomertools-list-link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+
 .newcomer-list{
     display: flex;
     flex-wrap: wrap;
@@ -217,6 +277,14 @@ body {
 .newcomer-list-wrap{
     width: 245px;
     height: 228px;
+}
+.testimonial-list-img::before{
+    content:"";
+    background-image: url(./photos/chevron-left.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
 }
 .testimonial-list-img{
     width: 399px;
@@ -288,4 +356,8 @@ body {
 .brand{
     padding-top: 55px;
     padding-bottom: 56px;
+}
+.newcomer{
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
