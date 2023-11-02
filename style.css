@@ -24,6 +24,21 @@ body {
     text-align: left;
     color: rgba(255, 255, 255, 0.55);
 }
+.nav-list-link-categories{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+.nav-list-link-categories::after{
+    content:"";
+    display: inline-block;
+    background-image: url("./photos/chevron-down.png");
+    width: 18px;
+    height: 18px;
+}
 .nav-list-item{
     padding-top: 38px;
 }
@@ -65,14 +80,14 @@ body {
     color: rgba(255, 255, 255, 0.9);
     padding-top: 34px;
 }
-.group{
+.hero{
     margin-top: 104px;
 }
 .container{
     width: 1224px;
     margin: 0 auto;
 }
-.group-list-title{
+.hero-list-title{
     font-family: Poppins;
     font-size: 50px;
     font-weight: 500;
@@ -83,7 +98,7 @@ body {
     width: 600px;
     height: 140px;
 }
-.group-list-dot{
+.hero-list-dot{
     font-size: 50px;
     font-weight: 500;
     line-height: 70px;
@@ -91,21 +106,36 @@ body {
     text-align: left;
     color: #FF6E30;
 }
-.group-list-search{
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
+.hero-list{
+    padding-top: 121px;
+    display: flex;
+    gap: 30px;
 }
-.group-list-search-wrap{
+.hero-list-search{
+    width: 190px;
+    height: 21px;
+    background-color: transparent;
+
+}
+.hero-list-search-wrap::before{
+    content: "";
+    background-image: url(./photos/searchicon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24.08px;
+    height: 24;
+    padding-right: 13px;
+}
+.hero-list-search-wrap{
+    display: flex;
+    align-items: center;
+    gap: 111px;
     width: 497.66px;
     height: 64px;
     border-radius: 15px;
-    background-color: black;
+    background-color: rgba(40, 48, 54, 1);
 }
-.group-list-description{
+.hero-list-description{
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -116,6 +146,17 @@ body {
     color: rgba(255, 255, 255, 0.55);
     width: 487px;
     height: 60px;
+}
+.hero-list-btn{
+    width: 130.43px;
+    height: 48px;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF6E30;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
 }
 .populartools-list{
     display: flex;
@@ -320,38 +361,116 @@ body {
     line-height: 62px;
     letter-spacing: 0em;
     text-align: center;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.78);
 }
 .join-list-description{
-    max-width: 427px;
-    max-height: 60px;
+    width: 427px;
+    height: 60px;
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .join{
     padding-bottom: 240px;
 }
 .footer-content-wrap{
-    display: flex;
+    /* display: flex;
     flex-wrap: flex;
-    gap: 115px;
+    gap: 115px; */
 }
 .contacts-list{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .categories-list{
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.company-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .logo-list{
     width: 260px;
     height: 183px;
+}
+.logo-list-copyright{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+.logo-list-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+.contacts-list-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+}
+.contacts-list-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+.categories-list-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+}
+.categories-list-description{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+.company-list-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+}
+.company-list-description{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
 }
 .brand{
     padding-top: 55px;
@@ -360,4 +479,15 @@ body {
 .newcomer{
     padding-top: 200px;
     padding-bottom: 200px;
+}
+.popular{
+    padding-top: 200px;
+}
+.footer-logo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.9);
+    padding-left: 12px;
 }

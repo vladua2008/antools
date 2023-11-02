@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,900;1,900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Tangerine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
@@ -22,8 +22,7 @@
                 <ul class="nav-list">
                     <li class="nav-list-item"><a class="nav-list-link" href="">Home</a></li>
                     <li class="nav-list-item">
-                        <a class="nav-list-link" href="">Categories</a>
-                        <img src="./photos/chevron-down.png" alt="">
+                        <a class="nav-list-link-categories" href="">Categories</a>
                     </li>
                     <li class="nav-list-item"><a class="nav-list-link" href="">My Collection</a></li>
                     <li class="nav-list-item"><a class="nav-list-link" href="">Blog</a></li>
@@ -37,18 +36,19 @@
         </div>
     </header>
     <main>
-        <section class="group">
+        <section class="hero">
             <div class="container">
-                <ul class="group-list">
-                    <li class="group-list-item">
-                        <h2 class="group-list-title">Awesome tools for
-                        Designer & Developer<span class="group-list-dot">.</span></h2>
-                        <p class="group-list-description">Antool is a web collection of information on paid or free Design and Development tools </p>
-                        <div class="group-list-search-wrap">
-                        <input class="group-list-search" placeholder="find more than 430+ tools..." type="text">                  
-                        <button class="group-list-btn">search</button>
-                        </div>                 
-                    </li>
+                <h1 class="hero-list-title">Awesome tools for
+                    Designer & Developer<span class="hero-list-dot">.</span></h1>
+                    <p class="hero-list-description">Antool is a web collection of information on paid or free Design and Development tools </p>
+                <form class="hero-list-search-wrap">
+                    <input class="hero-list-search" placeholder="find more than 430+ tools..." type="text">                  
+                    <button class="hero-list-btn">search</button>
+                </form>    
+                <ul class="hero-list">
+                    <li class="hero-item"><img src="./photos/bx_bxl-facebook.png" alt=""></li>
+                    <li class="hero-item"><img src="./photos/bx_bxl-instagram.png" alt=""></li>
+                    <li class="hero-item"><img src="./photos/bx_bxl-twitter.png" alt=""></li>
                 </ul>
             </div>
         </section>
@@ -221,15 +221,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content-wrap">
-            <ul class="logo-list">
-                <li class="logo-list-item"><a class="logo" href="">antools</a></li>
-                <li class="logo-list-item"><p class="logo-list-copyright">Copyright 2021. Antools</p></li>
-                <li class="logo-list-item"><p class="logo-list-description">Antool is a web collection of information on paid or free Design and Developmenttools</p></li>
+                <a class="footer-logo-list" href="">
+                    <img src="./photos/footerlogo.png" alt="">
+                    <span class="footer-logo">antools.</span></a>
+                <p class="logo-list-copyright">Copyright 2021. Antools</p>
+                <p class="logo-list-description">Antool is a web collection of information on paid or free Design and Developmenttools</p>
             </ul>
             <ul class="contacts-list">
                 <li class="contacts-list-item"><h3 class="contacts-list-title">Contact Us</h3></li>
                 <li class="contacts-list-item"><a class="contacts-list-link" href="tel:+621987463">+621987463</a></li>
-                <li class="contacts-list-item"><a class="address-list-link-address" href="">M Building, No.10 A</a></li>
+                <li class="contacts-list-item"><a class="contacts-list-link address" href="">M Building, No.10 A</a></li>
                 <li class="contacts-list-item"><a class="contacts-list-link" href="mailto:antools@awesome.com">antools@awesome.com</a></li>
             </ul>
             <ul class="categories-list">
