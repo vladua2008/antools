@@ -81,7 +81,12 @@ body {
     padding-top: 34px;
 }
 .hero{
-    margin-top: 104px;
+    padding-top: 58px;
+    content: "";
+    background-image: url("./photos/bg_hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
 }
 .container{
     width: 1224px;
@@ -110,6 +115,7 @@ body {
     padding-top: 121px;
     display: flex;
     gap: 30px;
+
 }
 .hero-list-search{
     width: 190px;
@@ -118,7 +124,7 @@ body {
 
 }
 .hero-list-search-wrap::before{
-    content: "";
+    content:"";
     background-image: url(./photos/searchicon.png);
     background-repeat: no-repeat;
     display: inline-block;
@@ -157,6 +163,10 @@ body {
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
+}
+.popular-list{
+    display: flex;
+    justify-content: center;
 }
 .populartools-list{
     display: flex;
@@ -239,18 +249,24 @@ body {
     line-height: 36px;
     letter-spacing: 0em;
     text-align: center;
-}
-.brand-list-img{
-    
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 .brand-list-wrap{
     background-image: url("./photos/Rectangle\ 308.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 253px;
 }
 .brand-list{
     display: flex;
-    justify-content: center;
-    row-gap: 107px;
+    justify-content: space-evenly;
+    
+}
+.newcomer-list-item{
+    width: 288px;
+    height: 284px;
+
 }
 .newcomer-list-title{
     font-family: Poppins;
@@ -259,6 +275,17 @@ body {
     line-height: 62px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 30px;
+}
+.newcomer-list-title2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+    padding-bottom: 60px;
+    width: 427px;
 }
 .newcomer-list-description{
     font-family: Poppins;
@@ -273,6 +300,7 @@ body {
     height: 58px;
     border-radius: 8px;
     background-color: #FF6E30;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -309,11 +337,22 @@ body {
     letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 255, 255, 0.55);
+    width: 106px;
+    height: 42px;
+}
+.newcomertools-list-link:hover{
+    width: 106px;
+    height: 42px;
+   
+    background-color: #FF6E30;
+    color: white;
 }
 
 .newcomer-list{
     display: flex;
     flex-wrap: wrap;
+    width: 600px;
+    height: 638px;
 }
 .newcomer-list-wrap{
     width: 245px;
