@@ -118,28 +118,30 @@ body {
 
 }
 .hero-list-search{
+    background-color: transparent;
+    font-size: 14px;
     width: 190px;
     height: 21px;
-    background-color: transparent;
-
+    padding-top: 13px;
+    padding-bottom: 14px;
 }
 .hero-list-search-wrap::before{
-    content:"";
-    background-image: url(./photos/searchicon.png);
+    content: "";
+    background-image: url("./photos/search\ \(4\).png");
     background-repeat: no-repeat;
     display: inline-block;
-    width: 24.08px;
-    height: 24;
-    padding-right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-right: 13px;
 }
 .hero-list-search-wrap{
     display: flex;
     align-items: center;
-    gap: 111px;
-    width: 497.66px;
-    height: 64px;
+    width: 468.56px;
     border-radius: 15px;
     background-color: rgba(40, 48, 54, 1);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 14px;
 }
 .hero-list-description{
     font-family: Poppins;
@@ -163,6 +165,7 @@ body {
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
+    margin-left: auto;
 }
 .popular-list{
     display: flex;
@@ -178,7 +181,7 @@ body {
 }
 .populartools-list-link{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.55);
@@ -240,7 +243,9 @@ body {
 .popular-tools-list-wrap{
     width: 326px;
     height: 228px ;
-    border-radius: 8px;
+    padding: 33px;
+    border-radius: 15px;
+    
 }
 
 .brand-list-title{
@@ -416,11 +421,11 @@ body {
 .join{
     padding-bottom: 240px;
 }
-.footer-content-wrap{
-    /* display: flex;
+/* .footer-content-wrap{
+    display: flex;
     flex-wrap: flex;
-    gap: 115px; */
-}
+    gap: 115px;
+} */
 .contacts-list{
     display: flex;
     flex-direction: column;
