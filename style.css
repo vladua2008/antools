@@ -308,9 +308,13 @@ body {
     
 }
 .newcomer-list-item{
-    width: 288px;
-    height: 284px;
-
+    flex-basis: calc((100% - 74px) / 2);
+    width: 245px;
+    height: 228px;
+}
+.newcomer-wrap{
+    display: flex;
+    gap: 197px;
 }
 .newcomer-list-title{
     font-family: Poppins;
@@ -320,6 +324,18 @@ body {
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.8);
     padding-bottom: 30px;
+}
+.newcomer-list-wrap-1{
+    display: flex;
+    gap: 30px;
+}
+.newcomer-toolbar{
+    display: flex;
+    gap: 43px;
+    align-items: center;
+}
+.newcomer-img-list{
+    display: flex;
 }
 .newcomer-list-title2{
     font-size: 18px;
@@ -379,29 +395,20 @@ body {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
     color: rgba(255, 255, 255, 0.55);
     width: 106px;
     height: 42px;
 }
-.newcomertools-list-link:hover{
-    width: 106px;
-    height: 42px;
-   
-    background-color: #FF6E30;
-    color: white;
-}
-
-.newcomer-list{
+.newcomer-list-wrap{
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    height: 638px;
+    max-width: 118px;
+    height: 66px;
 }
-.newcomer-list-wrap{
-    width: 245px;
-    height: 228px;
+.newcomer-list{
+    flex-basis: calc(100% );
 }
+
 .testimonial-list-img::before{
     content:"";
     background-image: url(./photos/chevron-left.png);
@@ -437,6 +444,20 @@ body {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.015em;
+    padding-left: 57px;
+    
+}
+.testimonial-list-description::before{
+    background-image: url("./photos/coma.png");
+    content: "";
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 103px;
+    height: 120px;
+}
+.testimonial-list-item{
+    display: flex;
+    align-items: center;
 }
 .join-list-title{
     font-size: 48px;
@@ -445,6 +466,7 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: rgba(255, 255, 255, 0.78);
+    padding-top: 250px;
 }
 .join-list-description{
     width: 427px;
@@ -453,12 +475,43 @@ body {
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0em;
-    text-align: center;
+    margin: 0 auto;
     color: rgba(255, 255, 255, 0.55);
+    padding-bottom: 100px;
 }
 
 .join{
     padding-bottom: 240px;
+}
+.join-list-search{
+    background-color: transparent;
+    font-size: 14px;
+    width: 190px;
+    height: 21px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+.join-list-search-wrap{
+    display: flex;
+    align-items: center;
+    width: 512.56px;
+    border-radius: 15px;
+    background-color: rgba(40, 48, 54, 1);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+.join-list-btn{
+    width: 130.43px;
+    height: 48px;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF6E30;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    margin-left: auto;
 }
 /* .footer-content-wrap{
     display: flex;
