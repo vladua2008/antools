@@ -224,6 +224,7 @@ body {
     color: rgba(255, 255, 255, 0.55);
     width: 427px;
     height: 60px;
+    padding-top: 25px;
 }
 .populartools-list-description{
     font-family: Poppins;
@@ -233,6 +234,8 @@ body {
     letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 255, 255, 0.55);
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .popular-list-btn {
     font-size: 20px;
@@ -263,8 +266,6 @@ body {
 }
 .popular-tools-list-wrap-2{
     width: 326px;
-    padding-top: 30px;
-    
 }
 .popular-tools-list-wrap-long{
     display: flex;
@@ -295,6 +296,7 @@ body {
     text-align: center;
     padding-top: 55px;
     padding-bottom: 55px;
+    color: rgba(255, 255, 255, 0.8);
 }
 .brand-list-wrap{
     background-image: url("./photos/Rectangle\ 308.png");
@@ -354,6 +356,8 @@ body {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .newcomer-list-btn{
     width: 198px;
@@ -392,12 +396,11 @@ body {
 }
 .newcomertools-list-link{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.55);
-    width: 106px;
-    height: 42px;
+    
 }
 .newcomer-list-wrap{
     display: flex;
@@ -406,7 +409,11 @@ body {
     height: 66px;
 }
 .newcomer-list{
-    flex-basis: calc(100% );
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    margin-left: 0 auto;
 }
 
 .testimonial-list-img::before{
@@ -436,7 +443,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
 } */
-.testimonial-list-description{
+.team-desc{
     max-width: 393px;
     max-height: 180px;
     font-family: Roboto;
@@ -445,7 +452,7 @@ body {
     line-height: 30px;
     letter-spacing: 0.015em;
     padding-left: 57px;
-    
+    color: rgba(255, 255, 255, 0.55);
 }
 .testimonial-list-description::before{
     background-image: url("./photos/coma.png");
@@ -455,10 +462,64 @@ body {
     width: 103px;
     height: 120px;
 }
-.testimonial-list-item{
+.team-chevron-right {
+    width: 80px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: url("./photos/chevron-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-chevron-left {
+    width: 80px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: url("./photos/chevron-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.team-content-wrap {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+}
+.main-content {
     display: flex;
     align-items: center;
 }
+.text-wrapper {
+    width: 445px;
+    height: 225px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("./photos/coma.png");
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+.team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    gap: 18px;
+}
+
+.team-list-item:nth-child(2) {
+    background-color: rgba(255, 110, 48, 1);
+    height: 8px;
+}
+
+.team-list-item {
+    width: 44px;
+    height: 6px;
+    background-color: rgba(40, 48, 54, 1);
+    border-radius: 4px;
+}
+
 .join-list-title{
     font-size: 48px;
     font-weight: 500;
@@ -478,6 +539,8 @@ body {
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.55);
     padding-bottom: 100px;
+    padding-top: 25px;
+    
 }
 
 .join{
@@ -513,50 +576,144 @@ body {
     letter-spacing: 0em;
     margin-left: auto;
 }
-/* .footer-content-wrap{
+.footer {
+    padding-top: 70px;
+    padding-bottom: 98px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-content-wrap {
+    display: flex;
+    gap: 156px;
+}
+
+.footer-logo-text {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.footer-content-wrap{
     display: flex;
     flex-wrap: flex;
     gap: 115px;
-} */
-.contacts-list{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+}
+.footer-copyright-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 21px;
 }
 
-.categories-list{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.footer-copyright-desc {
+    width: 260px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
 }
-.company-list{
+.footer-help {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 115px;
+}
+.logo-list-copyright {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 21px;
 }
 
+.logo-list-description {
+    width: 260px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+.contacts-list-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.address-list-item {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.address-list-link {
+    color: inherit;
+}
+.categories-list-item {
+    margin-top: 10px;
+}
+
+.categories-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.categories-list-link {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.info-list-item {
+    margin-top: 10px;
+}
+
+.info-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.info-list-link {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .logo-list{
     width: 260px;
     height: 183px;
 }
-.logo-list-copyright{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.9);
-    padding-top: 25px;
-    padding-bottom: 21px;
-}
-.logo-list-description{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.55);
-}
+
+
 .contacts-list-title{
     font-size: 20px;
     font-weight: 500;
@@ -609,7 +766,7 @@ body {
     color: rgba(255, 255, 255, 0.55);
 }
 .brand{
-    padding-top: 55px;
+    padding-top: 200px;
     padding-bottom: 56px;
 }
 .newcomer{
