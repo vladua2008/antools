@@ -274,8 +274,9 @@ body {
     height: 48px;
 }
 .populartools-list-item{
-    flex-basis: calc((100% - 124px) / 3);
     padding: 33px;
+    flex-basis: calc((100% - 124px) / 3);
+    
 }
 
 .brand-list-title{
