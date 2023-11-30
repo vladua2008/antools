@@ -191,7 +191,11 @@ body {
     line-height: 24px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.55);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 102px;
 }
 .popular-list-title{
     font-size: 48px;
@@ -250,9 +254,7 @@ body {
     background-color: transparent;
     display: block;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .populartools-list-img{
     width: 64px;
@@ -277,11 +279,6 @@ body {
     gap: 12px;
 }
 .populartools-list-link:hover{
-    height: 42px;
-    width: 102px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 8px;
     background-color: #FF6E30;
     color: rgba(255, 255, 255, 1);
