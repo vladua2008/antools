@@ -258,12 +258,12 @@ body {
 .popular-tools-list-wrap-img{
     display: flex;
 }
-.popular-tools-list-wrap{
+.tools-list-short-desc{
     display: flex;
-    flex-wrap: wrap;
-    width: 76px;
-    height: 66px;
-    padding-left: 30px;
+    gap: 30px;
+}
+.tools-action-bar{
+    display: flex;
 }
 .popular-tools-list-wrap-2{
     width: 326px;
