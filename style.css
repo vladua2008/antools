@@ -190,8 +190,6 @@ body {
     line-height: 24px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 0.55);
-    padding-left: 124px;
-
 }
 .popular-list-title{
     font-size: 48px;
@@ -264,25 +262,16 @@ body {
 }
 .tools-action-bar{
     display: flex;
+    align-items: center;
+    gap: 124px;
 }
-.popular-tools-list-wrap-2{
-    width: 326px;
-}
-.popular-tools-list-wrap-long{
+.popular-tools-list{
     display: flex;
-    flex-wrap: wrap;
-    width: 160px;
-    height: 66px;
-    padding-left: 30px;
 }
-.popular-tools-list-wrap-extra-long{
-    width: 229px;
-    padding-left: 30px;
-}
+
 .popular-tools-list-img{
     width: 48px;
     height: 48px;
-    padding-top: 30px;
 }
 .populartools-list-item{
     flex-basis: calc((100% - 124px) / 3);
